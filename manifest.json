@@ -1,0 +1,20 @@
+{
+  "name": "Quarky Sorteios",
+  "short_name": "Quarky",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#eb5e28",
+  "icons": [
+    {
+      "src": "IMAGES/QuarkySorteios_Logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "IMAGES/QuarkySorteios_Logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

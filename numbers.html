@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quarky</title>
+
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="IMAGES/Logo_QuarkySorteios2.ico"
+    />
+
+    <!-- FONTES GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="IMAGES/Logo_QuarkySorteios.png"
+          class="logo"
+          alt="Quarky Logo"
+        />
+      </a>
+      <nav>
+        <a href="numbers.html">Números</a>
+        <a href="names.html">Nomes</a>
+        <a href="colors.html">Cores</a>
+        <a href="teams.html">Equipes</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <a href="hindex.html">
+          <img
+            src="IMAGES/Logo_QuarkySorteios2.png"
+            class="logo2"
+            alt="Quarky Logo2"
+          />
+        </a>
+        <h1 class="hero-title">
+          <span class="welcome-text">Bem-vindo ao</span>
+          <span class="quarky-word">
+            <span class="letter orange">Q</span>
+            <span class="letter blue">u</span>
+            <span class="letter orange">a</span>
+            <span class="letter blue">r</span>
+            <span class="letter orange">k</span>
+            <span class="letter blue">y</span>
+            <span class="exclamation">!</span>
+          </span>
+          <span class="draw">Sorteios</span>
+        </h1>
+      </div>
+
+      <div class="container-numbers">
+        <div class="div-numbers">
+          <h1>
+            <span class="sorteio">Sorteio</span> de
+            <span class="sort-numbers">Números</span>
+          </h1>
+          <label for="quantity">Quantos números deseja sortear?</label>
+          <input
+            type="number"
+            id="quantity"
+            min="1"
+            max="10000"
+            placeholder="1"
+          />
+
+          <label for="min">Menor Número:</label>
+          <input type="number" id="min" min="1" max="10000" placeholder="1" />
+
+          <label for="max">Maior Número:</label>
+          <input
+            type="number"
+            id="max"
+            min="1"
+            max="10000"
+            placeholder="10000"
+          />
+
+          <button class="btn-sortNumber">🎲 Sortear 🎲</button>
+          <div id="result" style="display: none"></div>
+
+          <div id="countdown-container" style="display: none"></div>
+
+          <div id="overlay" class="modal-overlay">
+            <div id="custom-modal" class="modal-content">
+              <img
+                src="IMAGES/Logo_QuarkySorteios2.png"
+                alt="Quarky Logo"
+                class="modal-logo"
+              />
+              <div id="modal-body">
+                <h2 id="modal-title">Resultado</h2>
+                <p id="modal-message"></p>
+              </div>
+              <button id="close-modal" class="btn-close-modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLOCO DE PROPAGANDA QUARKZETTA -->
+      <div class="tech-container">
+        <div class="relative">
+          <!-- Bolinhas -->
+          <div class="data-bit bit-green"></div>
+          <div class="data-bit bit-yellow"></div>
+          <div class="data-bit bit-blue"></div>
+          <div class="data-bit bit-white"></div>
+          <div class="data-bit bit-black"></div>
+          <div class="data-bit bit-orange"></div>
+
+          <!-- Imagens -->
+          <div class="logos-container">
+            <img
+              src="IMAGES/Logo-QuarkZetta.png"
+              alt="Logo"
+              class="logoQuark"
+            />
+            <img
+              src="IMAGES/QuarkZetta-Nome2.png"
+              alt="Nome"
+              class="logoQuarkName"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- FIM DO BLOCO DE PROPAGANDA QUARKZETTA -->
+
+      <section class="anuncios">
+        <!-- ANÚNCIO DEVCLUB -->
+        <div class="ad-affiliate-container-devclub">
+          <a
+            href="https://landing-page-dev-club.vercel.app/"
+            target="_blank"
+            rel="nofollow noreferrer"
+            class="ad-card"
+          >
+            <img
+              src="./IMAGES/DevClub-curso.png"
+              alt="DevClub"
+              class="ad-image-devclub"
+            />
+            <div class="ad-content-devclub">
+              <div class="ad-title-devclub">💻 Aprenda a Programar! 💻</div>
+              <p class="ad-text">
+                Torne-se um Programador FullStack com a Melhor Escola de
+                Programação do Brasil.
+              </p>
+              <span class="ad-button-devclub"
+                ><strong id="dev">&lt Saiba</strong
+                ><strong id="club"> Mais &gt</strong>
+              </span>
+            </div>
+          </a>
+        </div>
+        <!-- FIM DO → ANÚNCIO DEVCLUB -->
+
+        <!-- ANÚNCIO CALVICE -->
+        <div class="ad-affiliate-container-RC">
+          <a
+            href="https://go.hotmart.com/T105267025L"
+            target="_blank"
+            rel="nofollow noreferrer"
+            class="ad-card-RC"
+          >
+            <img
+              src="./IMAGES/Perda-de-cabelo.jpg"
+              alt="Marmitas Fitness"
+              class="ad-image-RC"
+            />
+            <div class="ad-content-RC">
+              <div class="ad-title-RC">👨🏼‍🦲 Dê Adeus à Calvíce! 👨🏻‍🦱</div>
+              <p class="ad-text">
+                Reverta a Calvice / Alopécia através de uma Restauração Capilar
+                Natural.
+              </p>
+              <span class="ad-button-RC">👨🏻‍🦱 Saiba Mais 👩🏻</span>
+            </div>
+          </a>
+        </div>
+        <!-- FIM DO → ANÚNCIO CALVICE -->
+
+        <!-- ANÚNCIO VIVER NA ESPANHA - EBOOK -->
+        <div class="ad-affiliate-container-ebookVNE">
+          <a
+            href="https://pay.kiwify.com.br/a4FpVll"
+            target="_blank"
+            rel="nofollow noreferrer"
+            class="ad-card-ebookVNE"
+          >
+            <img
+              src="./IMAGES/Capa-Ebook.png"
+              alt="Marmitas Fitness"
+              class="ad-image-ebookVNE"
+            />
+            <div class="ad-content-ebookVNE">
+              <div class="ad-title-ebookVNE">🛫 Viver na Espanha! 🛬</div>
+              <p class="ad-text">
+                Descubra como se mudar e Viver na Espanha de forma 100% Legal!
+              </p>
+              <span class="ad-button-ebookVNE">✈️ Saiba Mais 🛩️</span>
+            </div>
+          </a>
+        </div>
+        <!-- FIM DO → ANÚNCIO VIVER NA ESPANHA - EBOOK -->
+
+        <!-- ANÚNCIO EBOOK 365 DE CONEXÃO COM DEUS -->
+        <div class="ad-affiliate-container-365DCD">
+          <a
+            href="https://go.hotmart.com/V105266831O"
+            target="_blank"
+            rel="nofollow noreferrer"
+            class="ad-card-365DCD"
+          >
+            <img
+              src="./IMAGES/365-Conexao-com-Deus.png"
+              alt="Marmitas Fitness"
+              class="ad-image-365DCD"
+            />
+            <div class="ad-content-365DCD">
+              <div class="ad-title-365DCD">
+                ⛪ 365 dias de Conexão com Deus! 🕊️
+              </div>
+              <p class="ad-text">
+                Se aproxime de Deus através de uma Conexão Inabaláve.
+              </p>
+              <p class="ad-text">(Livro Físico)</p>
+              <span class="ad-button-365DCD">🐑 Saiba Mais 🕊️</span>
+            </div>
+          </a>
+        </div>
+        <!-- FIM DO → ANÚNCIO EBOOK 365 DE CONEXÃO COM DEUS -->
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="main-footer">
+        <div class="footer-content">
+          <h2 class="footer-logo-text">QUARKY SORTEIOS</h2>
+          <p class="footer-credits">
+            © 2026 QUARKZETTA | ENGINEERED BY ISAQUE RIBEIRO
+          </p>
+        </div>
+      </footer>
+
+      <!-- BUTTON INSTALL APP -->
+      <div class="fixed-container left">
+        <a
+          href="javascript:void(0)"
+          id="installApp"
+          rel="nooper noreferrer"
+          class="btn-glass btn-shine"
+        >
+          <div class="logo-circle">
+            <img src="IMAGES/Logo_QuarkySorteios2.png" alt="Quarky Logo" />
+          </div>
+          <span class="btn-label">Instalar App</span>
+        </a>
+      </div>
+
+      <!-- BUTTON WHATSAPP -->
+      <div class="fixed-container right">
+        <a
+          id="btnWhatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-whatsapp"
+          title="Fale Conosco"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+            alt="WhatsApp Logo"
+          />
+        </a>
+      </div>
+    </main>
+
+    <script src="JS/script.js"></script>
+    <script src="pwa.js"></script>
+  </body>
+</html>
+
+<!-- CONTINUAR NA CONTA PÀDRÃO - GEMINI -->
+<!-- Corrigir a Animação da Logo dos modais que está vazando da div e cortando parte dfa imagem;
+ Corrigir o tempo de animação dos sorteios dos nomes;
+ Corrigir a animação final dos nomes sorteados nas equipes para que a animação seja aleatória cada nomes seja animado em tempo diferente para não ficarem todos iguais -->
