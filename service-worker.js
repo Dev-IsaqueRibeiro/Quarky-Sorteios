@@ -1,4 +1,4 @@
-const CACHE_NAME = "quarky-v1";
+const CACHE_NAME = "quarky-v2";
 const ASSETS = ["./", "./index.html", "./pwa.js", "./manifest.json"];
 
 // Instalação: Cria o cache inicial
